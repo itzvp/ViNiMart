@@ -1,12 +1,7 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   output: 'export',
-// };
-
-// module.exports = nextConfig;
-
-const nextConfig = {
+const config = {
+  target: 'serverless',
+  // Add other Next.js configuration options here if needed
   output: 'export',
 };
 
-module.exports = nextConfig;
+export default config;
