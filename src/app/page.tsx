@@ -15,7 +15,7 @@ const HomeHero = () => {
           <Typography variant="h2" sx={{ mb: 2 }}>
             Your Premier Destination for &nbsp;
             <Typography component="span" color="primary.main" variant="inherit">
-              Wine-Inspired Shopping!
+              Inspired Shopping!
             </Typography>{" "}
           </Typography>
           <Typography
