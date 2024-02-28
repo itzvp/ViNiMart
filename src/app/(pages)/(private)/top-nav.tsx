@@ -90,9 +90,9 @@ const TopNav: FC<TopNavProps> = () => {
         zIndex: (theme) => theme.zIndex.appBar,
       }}
     >
-      <Container
+      <Box
         sx={{
-          backdropFilter: "blur(6px)",
+          backdropFilter: "blur(50px)",
           backgroundColor: "transparent",
           borderRadius: 2.5,
           boxShadow: "none",
@@ -126,7 +126,10 @@ const TopNav: FC<TopNavProps> = () => {
               spacing={1}
               sx={{ textDecoration: "none" }}
             >
-              <Box className="hidden md:block">
+              <Box
+                className="hidden md:block"
+                sx={{ flexGrow: 1, textAlign: "right" }}
+              >
                 <Box
                   sx={{
                     color: "text.primary",
@@ -134,6 +137,7 @@ const TopNav: FC<TopNavProps> = () => {
                     fontSize: 14,
                     fontWeight: 800,
                     letterSpacing: "0.3px",
+                    paddingRight: "2px", // Adjust padding right for spacing
                     lineHeight: 2.5,
                     "& span": {
                       color: "primary.main",
@@ -190,9 +194,37 @@ const TopNav: FC<TopNavProps> = () => {
             </Stack>
           </Box>
         </Stack>
-      </Container>
+      </Box>
     </Box>
   );
 };
 
 export default TopNav;
+
+// import { Box, Container, Stack } from "@mui/material";
+
+// const TOP_NAV_HEIGHT = 64;
+
+// function TopNav() {
+//   return (
+//     <Box
+//       component="header"
+//       sx={{
+//         left: 0,
+//         right: 0,
+//         top: 0,
+//         position: "fixed",
+//         backgroundColor: "pink",
+//         zIndex: (theme) => theme.zIndex.appBar,
+//       }}
+//     >
+//       <Box sx={{ borderRadius: 2.5 }}>
+//         <Stack direction="row" sx={{ height: "100%" }}>
+//           Working
+//         </Stack>
+//       </Box>
+//     </Box>
+//   );
+// }
+
+// export default TopNav;
