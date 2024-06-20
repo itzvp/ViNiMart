@@ -26,15 +26,20 @@ interface Item {
 
 const items: Item[] = [
   {
-    title: "Pricing",
+    title: "Home",
     // path: paths.pricing,
   },
   {
-    title: "Pages",
+    title: "About",
     // popover: <PagesPopover />,
   },
   {
-    title: "Docs",
+    title: "Services",
+    // path: paths.docs,
+    external: true,
+  },
+  {
+    title: "Contact Us",
     // path: paths.docs,
     external: true,
   },
@@ -134,17 +139,19 @@ const TopNav: FC<TopNavProps> = () => {
                   sx={{
                     color: "text.primary",
                     fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    // backgroundColor: "blue",
                     fontSize: 14,
                     fontWeight: 800,
                     letterSpacing: "0.3px",
                     paddingRight: "2px", // Adjust padding right for spacing
+                    marginLeft: "40px",
                     lineHeight: 2.5,
                     "& span": {
                       color: "primary.main",
                     },
                   }}
                 >
-                  ViniMart For Shopping
+                  AKESHYA
                 </Box>
               </Box>
             </Stack>
