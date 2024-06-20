@@ -6,8 +6,6 @@ import { alpha } from "@mui/system/colorManipulator";
 import { usePathname } from "next/navigation";
 import Box from "@mui/material/Box";
 
-import Container from "@mui/material/Container";
-
 import Stack from "@mui/material/Stack";
 
 import { isServer } from "@/utils/common";
@@ -27,20 +25,18 @@ interface Item {
 const items: Item[] = [
   {
     title: "Home",
-    // path: paths.pricing,
   },
   {
     title: "About",
-    // popover: <PagesPopover />,
   },
   {
     title: "Services",
-    // path: paths.docs,
+
     external: true,
   },
   {
     title: "Contact Us",
-    // path: paths.docs,
+
     external: true,
   },
 ];
@@ -139,11 +135,11 @@ const TopNav: FC<TopNavProps> = () => {
                   sx={{
                     color: "text.primary",
                     fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    // backgroundColor: "blue",
+
                     fontSize: 14,
                     fontWeight: 800,
                     letterSpacing: "0.3px",
-                    paddingRight: "2px", // Adjust padding right for spacing
+                    paddingRight: "2px",
                     marginLeft: "40px",
                     lineHeight: 2.5,
                     "& span": {
@@ -207,31 +203,3 @@ const TopNav: FC<TopNavProps> = () => {
 };
 
 export default TopNav;
-
-// import { Box, Container, Stack } from "@mui/material";
-
-// const TOP_NAV_HEIGHT = 64;
-
-// function TopNav() {
-//   return (
-//     <Box
-//       component="header"
-//       sx={{
-//         left: 0,
-//         right: 0,
-//         top: 0,
-//         position: "fixed",
-//         backgroundColor: "pink",
-//         zIndex: (theme) => theme.zIndex.appBar,
-//       }}
-//     >
-//       <Box sx={{ borderRadius: 2.5 }}>
-//         <Stack direction="row" sx={{ height: "100%" }}>
-//           Working
-//         </Stack>
-//       </Box>
-//     </Box>
-//   );
-// }
-
-// export default TopNav;

@@ -1,5 +1,5 @@
 "use client";
-import { Box, Container, Grid, Rating, Stack, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import TopNav from "./top-nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HeroSection from "@/components/HeroSection";
@@ -9,19 +9,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 const HomeHero = () => {
   return (
-    <Box
-      sx={
-        {
-          // pt: "120px",
-        }
-      }
-    >
+    <Box>
       <TopNav />
-      {/* <Container maxWidth="lg"> */}
-      {/* <Grid container spacing={3} direction="column" alignItems="center"> */}
-      {/* <Grid item xs={12}> */}
+
       <Router>
-        {/* <Header /> */}
         <Routes>
           <Route
             path="/"
@@ -39,9 +30,6 @@ const HomeHero = () => {
         </Routes>
         <Footer />
       </Router>
-      {/* </Grid> */}
-      {/* </Grid> */}
-      {/* </Container> */}
     </Box>
   );
 };

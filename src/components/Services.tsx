@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles.css"; // Updated import path
+import "../styles.css";
 
 const Services = () => {
   return (
@@ -12,9 +12,6 @@ const Services = () => {
         </p>
         <div className="services-cards">
           <div className="service-card">
-            <div className="service-icon">
-              {/* Use an appropriate icon or image here */}
-            </div>
             <h2>Design</h2>
             <p>
               Our web design services can assist you in reclaiming your
@@ -24,9 +21,6 @@ const Services = () => {
             </p>
           </div>
           <div className="service-card">
-            <div className="service-icon">
-              {/* Use an appropriate icon or image here */}
-            </div>
             <h2>Development</h2>
             <p>
               Our development team can construct platforms to help your business
@@ -36,9 +30,6 @@ const Services = () => {
             </p>
           </div>
           <div className="service-card">
-            <div className="service-icon">
-              {/* Use an appropriate icon or image here */}
-            </div>
             <h2>Marketing</h2>
             <p>
               A beautiful website is the foundation of effective marketing. Our
@@ -48,9 +39,6 @@ const Services = () => {
             </p>
           </div>
           <div className="service-card">
-            <div className="service-icon">
-              {/* Use an appropriate icon or image here */}
-            </div>
             <h2>Support</h2>
             <p>
               Since the beginning, we at Akeshya have specialised in website

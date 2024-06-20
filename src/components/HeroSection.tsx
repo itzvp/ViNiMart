@@ -1,29 +1,8 @@
-// import React from "react";
-
-// const HeroSection = () => {
-//   return (
-//     <section className="hero-section">
-//       <div className="hero-content">
-//         <h1>Grow your business with Akeshya</h1>
-//         <p>
-//           We are a team of talented website designers, developers & digital
-//           marketers
-//         </p>
-//         <button>Get Started</button>
-//       </div>
-//       <div className="hero-image">
-//         {/* You can add an image or illustration here */}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default HeroSection;
 "use client";
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
-import "../styles.css"; // Updated import path
+import "../styles.css";
 
 const HeroSection = () => {
   const { ref, inView } = useInView({
@@ -46,9 +25,6 @@ const HeroSection = () => {
         </p>
         <button>Get Started</button>
       </animated.div>
-      <div className="hero-image">
-        {/* <img src={heroImage} alt="Illustration" /> */}
-      </div>
     </section>
   );
 };

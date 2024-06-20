@@ -8,8 +8,6 @@ import Paper from "@mui/material/Paper";
 import Portal from "@mui/material/Portal";
 import Typography from "@mui/material/Typography";
 
-// import { RouterLink } from "src/components/router-link";
-
 const TOP_NAV_HEIGHT = 64;
 const TOP_NAV_SPACE = 16;
 const OFFSET = 16;
@@ -34,8 +32,6 @@ const TopNavItem: FC<TopNavItemProps> = (props) => {
     setOpen(false);
   }, []);
 
-  // With mega-menu
-
   if (popover) {
     return (
       <>
@@ -47,7 +43,6 @@ const TopNavItem: FC<TopNavItemProps> = (props) => {
             height: "100%",
           }}
           onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
         >
           <ButtonBase
             disableRipple
@@ -70,14 +65,6 @@ const TopNavItem: FC<TopNavItemProps> = (props) => {
             <Typography component="span" variant="subtitle2">
               {title}
             </Typography>
-            {/* <SvgIcon
-              sx={{
-                fontSize: 16,
-                ml: 1,
-              }}
-            >
-              <ChevronDownIcon />
-            </SvgIcon> */}
           </ButtonBase>
         </Box>
         {open && (
@@ -113,8 +100,6 @@ const TopNavItem: FC<TopNavItemProps> = (props) => {
     );
   }
 
-  // Simple
-
   const linkProps = path
     ? external
       ? {
@@ -123,7 +108,6 @@ const TopNavItem: FC<TopNavItemProps> = (props) => {
           target: "_blank",
         }
       : {
-          // component: RouterLink,
           href: path,
         }
     : {};
