@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+header,
+section,
+footer {
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #f9f9f9;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-content button:hover {
+  background-color: #0056b3;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 100px 50px;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.about-content h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about-content p,
+.about-content ul {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Services Section Styles */
+.services-section {
+  padding: 100px 50px;
+  background-color: #f9f9f9;
+}
+
+.services-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.services-content h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  flex: 1 1 300px; /* Grow and shrink to fit available space, with a min width of 300px */
+  max-width: 300px; /* Optional: Limit the width of each service card */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* text-align: center; */
+}
+
+.service-icon {
+  margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 100px 50px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-content h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-content form input,
+.contact-content form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-content form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-content form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+}
