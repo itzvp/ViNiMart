@@ -86,7 +86,6 @@ const TopNav: FC<TopNavProps> = () => {
         position: "fixed",
         right: 0,
         top: 0,
-        // pt: 2,
         p: 0,
         zIndex: (theme) => theme.zIndex.appBar,
       }}
