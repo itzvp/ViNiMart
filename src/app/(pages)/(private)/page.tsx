@@ -9,7 +9,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 const HomeHero = () => {
   return (
-    <Box>
+    <div>
       <TopNav />
 
       <Router>
@@ -30,7 +30,7 @@ const HomeHero = () => {
         </Routes>
         <Footer />
       </Router>
-    </Box>
+    </div>
   );
 };
 export default HomeHero;
