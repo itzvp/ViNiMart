@@ -30,7 +30,7 @@ const About = () => {
           innovative people that have an open mind and are dedicated to making
           every idea a reality. We want to hear from you if you&apos;re
           interested in SEO, have Web Development ideas, or require a graphic
-          designer who can match your goals.
+          designer who can match your goal.
         </p>
         <button>Learn More</button>
       </div>
